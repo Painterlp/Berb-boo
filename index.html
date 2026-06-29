@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://www.iconpacks.net/icons/1/free-heart-icon-431-thumb.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>รักคุณอั้ย</title>
+  </head>
+  <body>
+    <!-- หน้าแรก -->
+    <div id="mainPage" class="container">
+      <span class="title">คุณอั้ยมาเป็นแฟนกับเพ้นเต้อมั้ยคั้บ?</span>
+      <img id="mainImage" src="หมูหัวใจ.png" alt="Do you?" />
+
+      <!-- ปุ่มกด -->
+      <div class="button-container">
+        <button
+          id="noButton"
+          class="button"
+          onmouseover="changeImage('หมูร้อง.png')"
+          onmouseout="resetImage()"
+          onclick="handleNoClick()"
+        >
+          ไม่เป็นต่ะ!!
+        </button>
+        <button
+          id="loveButton"
+          class="button"
+          onmouseover="changeImage('หมูเขิน2.png')"
+          onmouseout="resetImage()"
+          onclick="showPage('lovePage')"
+        >
+          เป็นแน่นอนต่ะะ
+        </button>
+      </div>
+    </div>
+
+    <!-- หน้ากด รักกกก -->
+    <div id="lovePage" class="container hidden">
+      <h1>เพ้นเต้อรักคุณอั้ยนะคั้บบ</h1>
+      <img src="รูปคู่.png" alt="Love You" />
+    </div>
+
+    <!-- หน้าถ้ายังจะกด No เรื่อยๆ  -->
+    <div id="noPage" class="container hidden">
+      <h1>ไอคนใจร้ายยT-T</h1>
+      <img src="ร้องไห้.png" alt="Die" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
